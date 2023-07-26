@@ -1,6 +1,6 @@
 {
   "name": "shake-torrent-server",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Torrent server for Shake Torrent",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,13 @@
     "start-server": "node ./index.js"
   },
   "bin": {
-        "start-torrent-server": "./bin/index.js"
-    },
+    "start-torrent-server": "./bin/index.js"
+  },
   "keywords": [
     "torrent",
     "server",
-    "web-torrent"
+    "webtorrent",
+    "local torrent server"
   ],
   "author": "Mastashake",
   "license": "MIT",
@@ -33,5 +34,16 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mastashake08/shake-torrent-server.git"
-  }
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "http://cash.me/$mastashake08"
+    },
+    "https://venmo.com/u/mastashake08",
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/mastashake08"
+    }
+  ]
 }
