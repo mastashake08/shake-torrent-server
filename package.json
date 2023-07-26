@@ -1,0 +1,23 @@
+{
+  "name": "shake-torrent-server",
+  "version": "1.0.0",
+  "description": "Torrent server for Shake Torrent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "torrent",
+    "server",
+    "web-torrent"
+  ],
+  "author": "Mastashake",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "webtorrent": "^2.1.15",
+    "webtorrent-hybrid": "^5.0.2"
+  },
+  "type": "module"
+}
