@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 import WebTorrent from 'webtorrent-hybrid'
 import express from 'express'

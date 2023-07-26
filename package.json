@@ -1,11 +1,15 @@
 {
   "name": "shake-torrent-server",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Torrent server for Shake Torrent",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "node ./index.js"
   },
+  "bin": {
+        "start-torrent-server": "./bin/index.js"
+    },
   "keywords": [
     "torrent",
     "server",
@@ -19,5 +23,15 @@
     "webtorrent": "^2.1.15",
     "webtorrent-hybrid": "^5.0.2"
   },
-  "type": "module"
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mastashake08/shake-torrent-server.git"
+  }
 }
