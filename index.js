@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 })
 app.post('/add', (req, res) => {
   const tor = req.body.torrent
-  client.add(tor,{path: '/Volumes/MASTADRIVE/torrents/'}, (torrent) => {
+  client.add(tor, (torrent) => {
   torrent.on('done', () => {
     console.log('torrent download finished')
   })
