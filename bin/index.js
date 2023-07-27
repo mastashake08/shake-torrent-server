@@ -29,7 +29,7 @@ app.post('/add', (req, res) => {
   torrent.on('wire', (wire, addr) => {
   console.log('connected to peer with address ' + [wire,addr])
 })
-res.send(torrent.magnetURI)
+res.json({magnetUri: torrent.magnetURI})
 })
 
 })
