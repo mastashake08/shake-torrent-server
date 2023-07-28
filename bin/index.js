@@ -20,7 +20,7 @@ if (process.argv[2]) {
     })
     app.post('/add', (req, res) => {
       const tor = req.body.torrent
-      client.add(tor,{ path: downloadPath} (torrent) => {
+      client.add(tor,{ path: downloadPath}, (torrent) => {
       torrent.on('done', () => {
         console.log('torrent download finished')
       })
@@ -31,7 +31,7 @@ if (process.argv[2]) {
         console.log(`${bytes} bytes uploaded`)
       })
       torrent.on('wire', (wire, addr) => {
-      console.log('connected to peer with address ' + [wire,addr])
+      console.log('connected to peer with address ' + addr)
     })
     res.json({magnetUri: torrent.magnetURI})
     })
