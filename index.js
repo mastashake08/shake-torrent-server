@@ -22,9 +22,6 @@ if (process.argv[2]) {
       torrent.on('done', () => {
         console.log('torrent download finished')
       })
-      torrent.on('download', () => {
-        console.log('Downloaded:::', torrent.progress * 100)
-      })
       torrent.on('upload', function (bytes) {
         console.log(`${bytes} bytes uploaded`)
       })
